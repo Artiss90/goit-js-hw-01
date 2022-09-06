@@ -1,9 +1,9 @@
 'use strict';
-const invoice = 50;
-const stock = 100;
+const invoice:number = 50;
+const stock:number = 100;
 
 // Write code under this line
-const message =
+const message:string =
   invoice <= stock
     ? `Заказ оформлен, с вами свяжется менеджер`
     : 'На складе недостаточно товаров';

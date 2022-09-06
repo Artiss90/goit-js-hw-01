@@ -1,12 +1,12 @@
 'use strict';
-const userPassword = '';
+const userPassword:string = '';
 
-const ADMIN_PASSWORD = 'jqueryismyjam';
+const ADMIN_PASSWORD:string = 'jqueryismyjam';
 
-const CANCELED_BY_USER = 'Отменено пользователем!';
-const ACCESS_IS_ALLOWED = 'Добро пожаловать!';
-const ACCESS_DENIED = 'Доступ запрещен, неверный пароль!';
-let message;
+const CANCELED_BY_USER:string = 'Отменено пользователем!';
+const ACCESS_IS_ALLOWED:string = 'Добро пожаловать!';
+const ACCESS_DENIED:string = 'Доступ запрещен, неверный пароль!';
+let message:string | undefined;
 
 if (userPassword === ADMIN_PASSWORD) {
   message = ACCESS_IS_ALLOWED;

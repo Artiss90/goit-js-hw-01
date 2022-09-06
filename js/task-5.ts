@@ -1,15 +1,15 @@
 'use strict';
 // const countryName = 'индия';
-const countryName = prompt('Выберите страну доставки');
-const CANCELED_BY_USER = 'Отменено пользователем!';
-const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
-const CHINA = 'Китай';
-const AUSTRALIA = 'Австралия';
-const INDIA = 'Индия';
-const JAMAICA = 'Ямайка';
-let message;
-let price = 0;
-let country;
+const countryName:string|null = prompt('Выберите страну доставки');
+const CANCELED_BY_USER:string = 'Отменено пользователем!';
+const NO_DELIVERY:string = 'В выбранную страну доставка недоступна.';
+const CHINA :string= 'Китай';
+const AUSTRALIA:string = 'Австралия';
+const INDIA:string = 'Индия';
+const JAMAICA :string= 'Ямайка';
+let message:string | undefined;
+let price:number = 0;
+let country:string | undefined;
 if (countryName === null) {
   message = CANCELED_BY_USER;
 } else {
